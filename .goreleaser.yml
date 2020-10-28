@@ -1,0 +1,23 @@
+project_name: snippr
+
+builds:
+  - skip: true
+checksum:
+  disable: true
+changelog:
+  skip: true
+release:
+  github:
+    owner: snippr-io
+    name: homebrew-cli
+  extra_files:
+    - glob: dist-new/CHANGELOG.md
+    - glob: dist-new/*.tar.gz
+    - glob: dist-new/*.zip
+    - glob: dist-new/snippr-install.exe
+brews:
+  - skip_upload: auto
+    tap:
+      owner: snippr-io
+      name: homebrew-cli
+
