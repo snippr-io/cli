@@ -5,16 +5,16 @@
 class Snippr < Formula
   desc ""
   homepage ""
-  version "0.5.1"
+  version "0.5.3"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/snippr-io/homebrew-cli/releases/download/0.5.1/snippr-darwin-amd64.tar.gz"
-    sha256 "a60ed56718b2859715b0789e272a7c38f8ce5c156f6e0485a8a0d3625efb8e3f"
+    url "https://github.com/snippr-io/homebrew-cli/releases/download/0.5.3/snippr-darwin-amd64.tar.gz"
+    sha256 "d672ba7fa442060bc5830c4fb2d389f351e4fc75fb34949686212e89908f8132"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/snippr-io/homebrew-cli/releases/download/0.5.1/snippr-linux-amd64.tar.gz"
-    sha256 "9fbe23c503c81a09973fcb3beddbf87358d2ee701fe1076b568f79756409c215"
+    url "https://github.com/snippr-io/homebrew-cli/releases/download/0.5.3/snippr-linux-amd64.tar.gz"
+    sha256 "97b89aa7d53885ae5c915023a028235d8fdd42b9c66627e921f9ad7a9e70111b"
   end
 
   def install
